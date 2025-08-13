@@ -239,10 +239,22 @@ if __name__ == "__main__":
     else:
         logger.error("请以管理员权限运行本程序")
         run_as_admin()
-    config_path = os.path.join(os.path.dirname(__file__), "config/config1.json")
-    logger.info(f"加载配置文件: {config_path}")
+
+    # 读取 id 参数
+    if len(sys.argv) < 2:
+        logger.warning("未给定参数 id，默认为1，请给定参数设置例如: python Login.py 1")
+        config_id = sys.argv[1] if len(sys.argv) > 1 else "1"
+    # 如果没有给定参数，默认使用第一个配置
+
+    config_path = os.path.join(os.path.dirname(__file__), "config/config.json")
+    logger.info(f"加载配置文件: {config_path}，使用第 {config_id} 配置")
     with open(config_path, "r", encoding="utf-8") as f:
-        config = json.load(f)
+        all_config = json.load(f)
+
+    if config_id not in all_config:
+        logger.error(f"未找到 id={config_id} 的配置，请检查 config.json")
+        sys.exit(1)
+    config = all_config[config_id]
     logger.debug(f"配置内容：{config}")
 
     login = Login(

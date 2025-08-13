@@ -1,0 +1,29 @@
+{
+  "1": {
+    "game_name": "崩坏：星穹铁道",
+    "game_path": "D:/Star Rail/Game/StarRail.exe",
+    "game_type": "StarRail",
+    "server": "0",
+    "enable_login": true,
+    "username": "user1@example.com",
+    "password": "password1"
+  },
+  "2": {
+    "game_name": "崩坏：星穹铁道",
+    "game_path": "D:/star rail B/StarRail.exe",
+    "game_type": "StarRail",
+    "server": "1",
+    "enable_login": true,
+    "username": "user2@example.com",
+    "password": "password2"
+  },
+  "3": {
+    "game_name": "崩坏：星穹铁道",
+    "game_path": "D:/Star Rail/Game/StarRail.exe",
+    "game_type": "StarRail",
+    "server": "0",
+    "enable_login": false,
+    "username": "",
+    "password": ""
+  }
+}
