@@ -1,0 +1,622 @@
+2025-08-13 22:25:32 INFO 程序开始
+2025-08-13 22:25:32 INFO 以管理员权限运行
+2025-08-13 22:25:32 INFO 加载配置文件: D:\School\AutoLogin\config.json
+2025-08-13 22:27:10 INFO 程序开始
+2025-08-13 22:27:10 INFO 以管理员权限运行
+2025-08-13 22:27:10 INFO 加载配置文件: D:\School\AutoLogin\config.json
+2025-08-13 22:27:46 INFO 程序开始
+2025-08-13 22:27:46 ERROR 请以管理员权限运行本程序
+2025-08-13 22:27:46 INFO 尝试以管理员权限重启
+2025-08-13 22:28:20 INFO 程序开始
+2025-08-13 22:28:20 INFO 以管理员权限运行
+2025-08-13 22:28:20 INFO 加载配置文件: D:\School\AutoLogin\config.json
+2025-08-13 22:29:30 INFO 程序开始
+2025-08-13 22:29:30 ERROR 请以管理员权限运行本程序
+2025-08-13 22:29:30 INFO 尝试以管理员权限重启
+2025-08-13 22:29:33 INFO 程序开始
+2025-08-13 22:29:33 INFO 以管理员权限运行
+2025-08-13 22:29:33 INFO 加载配置文件: D:\School\AutoLogin\config.json
+2025-08-13 22:30:12 INFO 程序开始
+2025-08-13 22:30:12 ERROR 请以管理员权限运行本程序
+2025-08-13 22:30:12 INFO 尝试以管理员权限重启
+2025-08-13 22:30:14 INFO 程序开始
+2025-08-13 22:30:14 INFO 以管理员权限运行
+2025-08-13 22:30:14 INFO 加载配置文件: D:\School\AutoLogin\config.json
+2025-08-13 22:30:24 INFO 程序开始
+2025-08-13 22:30:24 INFO 以管理员权限运行
+2025-08-13 22:30:24 INFO 加载配置文件: D:\School\AutoLogin\config.json
+2025-08-13 22:32:40 INFO 程序开始
+2025-08-13 22:32:40 ERROR 请以管理员权限运行本程序
+2025-08-13 22:32:40 INFO 尝试以管理员权限重启
+2025-08-13 22:32:43 INFO 程序开始
+2025-08-13 22:32:43 INFO 以管理员权限运行
+2025-08-13 22:32:43 INFO 加载配置文件: D:\School\AutoLogin\config/config1.json
+2025-08-13 22:32:43 DEBUG 配置内容：{'game_name': '崩坏：星穹铁道', 'game_path': 'D:/Star Rail/Game/StarRail.exe', 'game_type': 'StarRail', 'server': '0', 'enable_login': True, 'username': '17390984961', 'password': 'huangziyan123'}
+2025-08-13 22:32:43 INFO 游戏已经启动
+2025-08-13 22:32:43 INFO 登录中
+2025-08-13 22:32:46 DEBUG 检测对象列表 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:32:47 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.422)
+2025-08-13 22:32:47 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.361)
+2025-08-13 22:32:47 DEBUG 检测成功, 索引 2
+2025-08-13 22:32:47 INFO 登录状态 2
+2025-08-13 22:32:49 DEBUG 点击对象res/img/logout.png
+2025-08-13 22:32:49 DEBUG 点击对象时出错: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 22:35:10 INFO 程序开始
+2025-08-13 22:35:10 INFO 以管理员权限运行
+2025-08-13 22:35:10 INFO 加载配置文件: D:\School\AutoLogin\config/config1.json
+2025-08-13 22:35:10 DEBUG 配置内容：{'game_name': '崩坏：星穹铁道', 'game_path': 'D:/Star Rail/Game/StarRail.exe', 'game_type': 'StarRail', 'server': '0', 'enable_login': True, 'username': '17390984961', 'password': 'huangziyan123'}
+2025-08-13 22:35:10 INFO 等待游戏启动
+2025-08-13 22:35:15 INFO 启动成功
+2025-08-13 22:35:15 INFO 登录中
+2025-08-13 22:35:18 DEBUG 检测对象列表 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:35:19 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.235)
+2025-08-13 22:35:20 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.250)
+2025-08-13 22:35:20 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.292)
+2025-08-13 22:35:20 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.325)
+2025-08-13 22:35:20 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:35:21 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.277)
+2025-08-13 22:35:21 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.344)
+2025-08-13 22:35:21 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.369)
+2025-08-13 22:35:21 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.351)
+2025-08-13 22:35:21 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:35:22 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.328)
+2025-08-13 22:35:22 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.409)
+2025-08-13 22:35:22 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.369)
+2025-08-13 22:35:22 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.416)
+2025-08-13 22:35:22 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:35:23 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.306)
+2025-08-13 22:35:23 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.412)
+2025-08-13 22:35:23 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.399)
+2025-08-13 22:35:23 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.404)
+2025-08-13 22:35:23 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:35:24 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.257)
+2025-08-13 22:35:25 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.240)
+2025-08-13 22:35:25 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.312)
+2025-08-13 22:35:25 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.343)
+2025-08-13 22:35:25 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:35:26 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.268)
+2025-08-13 22:35:26 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.242)
+2025-08-13 22:35:26 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.312)
+2025-08-13 22:35:26 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.333)
+2025-08-13 22:35:26 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:35:27 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.338)
+2025-08-13 22:35:27 DEBUG 检测成功, 索引 1
+2025-08-13 22:35:27 INFO 登录状态 1
+2025-08-13 22:35:29 DEBUG 点击对象res/img/logout.png
+2025-08-13 22:35:29 DEBUG 点击对象时出错: res/img/logout.png: Could not locate the image (highest confidence = 0.447)
+2025-08-13 22:35:31 DEBUG 点击对象res/img/quit2.png
+2025-08-13 22:35:31 DEBUG 点击对象时出错: res/img/quit2.png: Could not locate the image (highest confidence = 0.339)
+2025-08-13 22:35:33 DEBUG 点击对象res/img/login_other.png
+2025-08-13 22:35:34 DEBUG 点击对象时出错: res/img/login_other.png: Could not locate the image (highest confidence = 0.279)
+2025-08-13 22:35:36 DEBUG 点击对象res/img/login_with_account.png
+2025-08-13 22:35:36 DEBUG 点击对象时出错: res/img/login_with_account.png: Could not locate the image (highest confidence = 0.412)
+2025-08-13 22:35:36 ERROR 发生错误，错误编号10
+2025-08-13 22:35:36 WARNING 登录失败
+2025-08-13 22:35:36 WARNING 任务 start_game 失败，终止后续操作
+2025-08-13 22:36:29 INFO 程序开始
+2025-08-13 22:36:29 ERROR 请以管理员权限运行本程序
+2025-08-13 22:36:29 INFO 尝试以管理员权限重启
+2025-08-13 22:36:32 INFO 程序开始
+2025-08-13 22:36:32 INFO 以管理员权限运行
+2025-08-13 22:36:32 INFO 加载配置文件: D:\School\AutoLogin\config/config1.json
+2025-08-13 22:36:32 DEBUG 配置内容：{'game_name': '崩坏：星穹铁道', 'game_path': 'D:/Star Rail/Game/StarRail.exe', 'game_type': 'StarRail', 'server': '0', 'enable_login': True, 'username': '17390984961', 'password': 'huangziyan123'}
+2025-08-13 22:36:32 INFO 游戏已经启动
+2025-08-13 22:36:32 INFO 登录中
+2025-08-13 22:36:35 DEBUG 检测对象列表 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:36:36 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.332)
+2025-08-13 22:36:36 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.343)
+2025-08-13 22:36:36 DEBUG 检测成功, 索引 2
+2025-08-13 22:36:36 INFO 登录状态 2
+2025-08-13 22:36:38 DEBUG 点击对象res/img/logout.png
+2025-08-13 22:36:41 DEBUG 点击对象res/img/quit2.png
+2025-08-13 22:36:43 DEBUG 点击对象res/img/login_other.png
+2025-08-13 22:36:45 DEBUG 点击对象res/img/login_with_account.png
+2025-08-13 22:36:45 INFO 登录到17390984961
+2025-08-13 22:36:48 DEBUG 按下按键tab
+2025-08-13 22:36:53 DEBUG 点击对象res/img/agree.png
+2025-08-13 22:36:55 DEBUG 点击对象res/img/enter_game.png
+2025-08-13 22:36:55 DEBUG 检测对象 res/img/welcome.png
+2025-08-13 22:36:56 DEBUG 图像不存在 res/img/welcome.png: Could not locate the image (highest confidence = 0.244)
+2025-08-13 22:36:56 DEBUG 检测成功
+2025-08-13 22:36:56 INFO 登录成功
+2025-08-13 22:36:56 INFO 登录成功
+2025-08-13 22:36:57 DEBUG 检测对象 res/img/quit.png
+2025-08-13 22:36:58 DEBUG 检测成功
+2025-08-13 22:37:00 DEBUG 点击坐标960,540
+2025-08-13 22:37:03 INFO 开始游戏
+2025-08-13 22:37:03 DEBUG 检测对象 res/img/quit.png
+2025-08-13 22:37:04 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.337)
+2025-08-13 22:37:05 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.344)
+2025-08-13 22:37:06 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.340)
+2025-08-13 22:37:07 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.331)
+2025-08-13 22:37:08 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.348)
+2025-08-13 22:37:09 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.264)
+2025-08-13 22:37:10 DEBUG 检测成功
+2025-08-13 22:37:10 DEBUG 点击坐标960,540
+2025-08-13 22:37:12 DEBUG 点击对象res/img/train_supply.png
+2025-08-13 22:37:12 DEBUG 点击对象时出错: res/img/train_supply.png: Could not locate the image (highest confidence = 0.101)
+2025-08-13 22:37:14 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.432)
+2025-08-13 22:37:14 TRACE res/img/phone.png: Could not locate the image (highest confidence = 0.225)
+2025-08-13 22:37:14 DEBUG 图像列表中没有任何图像存在 ['res/img/chat_enter.png', 'res/img/phone.png']
+2025-08-13 22:37:17 DEBUG 点击对象res/img/train_supply.png
+2025-08-13 22:37:17 DEBUG 点击对象时出错: res/img/train_supply.png: Could not locate the image (highest confidence = 0.282)
+2025-08-13 22:37:19 INFO 所有登录相关任务执行完毕
+2025-08-13 22:39:27 INFO 程序开始
+2025-08-13 22:39:27 INFO 以管理员权限运行
+2025-08-13 22:39:27 INFO 加载配置文件: D:\School\AutoLogin\config/config1.json
+2025-08-13 22:39:27 DEBUG 配置内容：{'game_name': '崩坏：星穹铁道', 'game_path': 'D:/Star Rail/Game/StarRail.exe', 'game_type': 'StarRail', 'server': '0', 'enable_login': True, 'username': '2981883527@qq.com', 'password': 'huangziyan123'}
+2025-08-13 22:39:27 INFO 等待游戏启动
+2025-08-13 22:39:32 INFO 启动成功
+2025-08-13 22:39:32 INFO 登录中
+2025-08-13 22:39:35 DEBUG 检测对象列表 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:39:36 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.235)
+2025-08-13 22:39:36 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.250)
+2025-08-13 22:39:36 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.292)
+2025-08-13 22:39:37 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.325)
+2025-08-13 22:39:37 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:39:38 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.328)
+2025-08-13 22:39:38 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.409)
+2025-08-13 22:39:38 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.369)
+2025-08-13 22:39:38 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.416)
+2025-08-13 22:39:38 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:39:39 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.328)
+2025-08-13 22:39:39 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.409)
+2025-08-13 22:39:39 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.369)
+2025-08-13 22:39:39 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.416)
+2025-08-13 22:39:39 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:39:40 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.310)
+2025-08-13 22:39:40 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.331)
+2025-08-13 22:39:40 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.339)
+2025-08-13 22:39:40 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.360)
+2025-08-13 22:39:40 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:39:41 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.261)
+2025-08-13 22:39:41 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.241)
+2025-08-13 22:39:42 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.318)
+2025-08-13 22:39:42 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.341)
+2025-08-13 22:39:42 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:39:43 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.338)
+2025-08-13 22:39:43 DEBUG 检测成功, 索引 1
+2025-08-13 22:39:43 INFO 登录状态 1
+2025-08-13 22:39:45 DEBUG 点击对象res/img/logout.png
+2025-08-13 22:39:45 DEBUG 点击对象时出错: res/img/logout.png: Could not locate the image (highest confidence = 0.460)
+2025-08-13 22:39:47 DEBUG 点击对象res/img/quit2.png
+2025-08-13 22:39:47 DEBUG 点击对象时出错: res/img/quit2.png: Could not locate the image (highest confidence = 0.296)
+2025-08-13 22:39:49 DEBUG 点击对象res/img/login_other.png
+2025-08-13 22:39:49 DEBUG 点击对象时出错: res/img/login_other.png: Could not locate the image (highest confidence = 0.312)
+2025-08-13 22:39:51 DEBUG 点击对象res/img/login_with_account.png
+2025-08-13 22:39:51 DEBUG 点击对象时出错: res/img/login_with_account.png: Could not locate the image (highest confidence = 0.356)
+2025-08-13 22:39:51 ERROR 发生错误，错误编号10
+2025-08-13 22:39:51 WARNING 登录失败
+2025-08-13 22:39:51 WARNING 任务 start_game 失败，终止后续操作
+2025-08-13 22:40:48 INFO 程序开始
+2025-08-13 22:40:48 INFO 以管理员权限运行
+2025-08-13 22:40:48 INFO 加载配置文件: D:\School\AutoLogin\config/config1.json
+2025-08-13 22:40:48 DEBUG 配置内容：{'game_name': '崩坏：星穹铁道', 'game_path': 'D:/Star Rail/Game/StarRail.exe', 'game_type': 'StarRail', 'server': '0', 'enable_login': True, 'username': '2981883527@qq.com', 'password': 'huangziyan123'}
+2025-08-13 22:40:48 INFO 游戏已经启动
+2025-08-13 22:40:48 INFO 登录中
+2025-08-13 22:40:51 DEBUG 检测对象列表 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:40:52 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.325)
+2025-08-13 22:40:52 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.416)
+2025-08-13 22:40:52 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.374)
+2025-08-13 22:40:52 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.409)
+2025-08-13 22:40:52 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:40:53 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.274)
+2025-08-13 22:40:53 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.240)
+2025-08-13 22:40:53 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.313)
+2025-08-13 22:40:53 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.338)
+2025-08-13 22:40:53 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:40:54 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.261)
+2025-08-13 22:40:54 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.242)
+2025-08-13 22:40:54 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.313)
+2025-08-13 22:40:54 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.338)
+2025-08-13 22:40:54 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:40:56 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.337)
+2025-08-13 22:40:56 DEBUG 检测成功, 索引 1
+2025-08-13 22:40:56 INFO 登录状态 1
+2025-08-13 22:40:58 DEBUG 点击对象res/img/logout.png
+2025-08-13 22:41:00 DEBUG 点击对象res/img/quit2.png
+2025-08-13 22:41:02 DEBUG 点击对象res/img/login_other.png
+2025-08-13 22:41:18 INFO 程序开始
+2025-08-13 22:41:18 INFO 以管理员权限运行
+2025-08-13 22:41:18 INFO 加载配置文件: D:\School\AutoLogin\config/config1.json
+2025-08-13 22:41:18 DEBUG 配置内容：{'game_name': '崩坏：星穹铁道', 'game_path': 'D:/Star Rail/Game/StarRail.exe', 'game_type': 'StarRail', 'server': '0', 'enable_login': True, 'username': '2981883527@qq.com', 'password': 'huangziyan123'}
+2025-08-13 22:41:18 INFO 等待游戏启动
+2025-08-13 22:41:23 INFO 启动成功
+2025-08-13 22:41:23 INFO 登录中
+2025-08-13 22:41:26 DEBUG 检测对象列表 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:41:27 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.235)
+2025-08-13 22:41:27 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.250)
+2025-08-13 22:41:27 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.292)
+2025-08-13 22:41:27 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.325)
+2025-08-13 22:41:27 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:41:28 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.325)
+2025-08-13 22:41:28 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.377)
+2025-08-13 22:41:28 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.370)
+2025-08-13 22:41:28 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.361)
+2025-08-13 22:41:28 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:41:30 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.328)
+2025-08-13 22:41:30 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.409)
+2025-08-13 22:41:30 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.369)
+2025-08-13 22:41:30 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.416)
+2025-08-13 22:41:30 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:41:31 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.310)
+2025-08-13 22:41:31 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.410)
+2025-08-13 22:41:31 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.404)
+2025-08-13 22:41:31 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.403)
+2025-08-13 22:41:31 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:41:32 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.254)
+2025-08-13 22:41:32 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.240)
+2025-08-13 22:41:32 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.312)
+2025-08-13 22:41:32 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.345)
+2025-08-13 22:41:32 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:41:33 DEBUG 检测成功, 索引 0
+2025-08-13 22:41:33 INFO 登录状态 0
+2025-08-13 22:41:35 DEBUG 点击对象res/img/login_other.png
+2025-08-13 22:41:38 DEBUG 点击对象res/img/login_with_account.png
+2025-08-13 22:41:38 INFO 登录到2981883527@qq.com
+2025-08-13 22:41:40 DEBUG 按下按键tab
+2025-08-13 22:41:45 DEBUG 点击对象res/img/agree.png
+2025-08-13 22:41:47 DEBUG 点击对象res/img/enter_game.png
+2025-08-13 22:41:47 DEBUG 检测对象 res/img/welcome.png
+2025-08-13 22:41:48 DEBUG 图像不存在 res/img/welcome.png: Could not locate the image (highest confidence = 0.242)
+2025-08-13 22:41:48 DEBUG 检测成功
+2025-08-13 22:41:48 INFO 登录成功
+2025-08-13 22:41:48 INFO 登录成功
+2025-08-13 22:41:49 DEBUG 检测对象 res/img/quit.png
+2025-08-13 22:41:50 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.378)
+2025-08-13 22:41:51 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.383)
+2025-08-13 22:41:52 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.401)
+2025-08-13 22:41:53 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.395)
+2025-08-13 22:41:54 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.393)
+2025-08-13 22:41:55 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.330)
+2025-08-13 22:41:56 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.310)
+2025-08-13 22:41:57 DEBUG 检测成功
+2025-08-13 22:41:59 DEBUG 图像不存在 res/img/12+.png: Could not locate the image (highest confidence = 0.301)
+2025-08-13 22:41:59 INFO 开始游戏
+2025-08-13 22:41:59 DEBUG 检测对象 res/img/quit.png
+2025-08-13 22:42:00 DEBUG 检测成功
+2025-08-13 22:42:00 DEBUG 点击坐标960,540
+2025-08-13 22:42:02 DEBUG 点击对象res/img/train_supply.png
+2025-08-13 22:42:02 DEBUG 点击对象时出错: res/img/train_supply.png: Could not locate the image (highest confidence = 0.190)
+2025-08-13 22:42:04 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.432)
+2025-08-13 22:42:04 TRACE res/img/phone.png: Could not locate the image (highest confidence = 0.225)
+2025-08-13 22:42:04 DEBUG 图像列表中没有任何图像存在 ['res/img/chat_enter.png', 'res/img/phone.png']
+2025-08-13 22:42:07 DEBUG 点击对象res/img/train_supply.png
+2025-08-13 22:42:07 DEBUG 点击对象时出错: res/img/train_supply.png: Could not locate the image (highest confidence = 0.315)
+2025-08-13 22:42:09 INFO 所有登录相关任务执行完毕
+
+2025-08-13 22:42:36 INFO 程序开始
+2025-08-13 22:42:36 INFO 以管理员权限运行
+2025-08-13 22:42:36 INFO 加载配置文件: D:\School\AutoLogin\config/config1.json
+2025-08-13 22:42:36 DEBUG 配置内容：{'game_name': '崩坏：星穹铁道', 'game_path': 'D:/Star Rail/Game/StarRail.exe', 'game_type': 'StarRail', 'server': '0', 'enable_login': True, 'username': '2981883527@qq.com', 'password': 'huangziyan123'}
+2025-08-13 22:42:36 INFO 等待游戏启动
+2025-08-13 22:42:41 INFO 启动成功
+2025-08-13 22:42:41 INFO 登录中
+2025-08-13 22:42:44 DEBUG 检测对象列表 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:42:46 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.235)
+2025-08-13 22:42:46 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.250)
+2025-08-13 22:42:46 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.292)
+2025-08-13 22:42:46 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.325)
+2025-08-13 22:42:46 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:42:47 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.328)
+2025-08-13 22:42:47 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.409)
+2025-08-13 22:42:47 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.369)
+2025-08-13 22:42:47 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.416)
+2025-08-13 22:42:47 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:42:48 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.328)
+2025-08-13 22:42:48 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.409)
+2025-08-13 22:42:48 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.369)
+2025-08-13 22:42:48 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.416)
+2025-08-13 22:42:48 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:42:49 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.313)
+2025-08-13 22:42:49 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.374)
+2025-08-13 22:42:49 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.371)
+2025-08-13 22:42:49 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.377)
+2025-08-13 22:42:49 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:42:51 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.252)
+2025-08-13 22:42:51 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.241)
+2025-08-13 22:42:51 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.312)
+2025-08-13 22:42:51 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.343)
+2025-08-13 22:42:51 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:42:52 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.338)
+2025-08-13 22:42:52 DEBUG 检测成功, 索引 1
+2025-08-13 22:42:52 INFO 登录状态 1
+2025-08-13 22:42:54 DEBUG 点击对象res/img/logout.png
+2025-08-13 22:42:54 DEBUG 点击对象时出错: res/img/logout.png: Could not locate the image (highest confidence = 0.446)
+2025-08-13 22:42:56 DEBUG 点击对象res/img/quit2.png
+2025-08-13 22:42:56 DEBUG 点击对象时出错: res/img/quit2.png: Could not locate the image (highest confidence = 0.279)
+2025-08-13 22:42:58 DEBUG 点击对象res/img/login_other.png
+2025-08-13 22:42:58 DEBUG 点击对象时出错: res/img/login_other.png: Could not locate the image (highest confidence = 0.371)
+2025-08-13 22:43:00 DEBUG 点击对象res/img/login_with_account.png
+2025-08-13 22:43:00 DEBUG 点击对象时出错: res/img/login_with_account.png: Could not locate the image (highest confidence = 0.357)
+2025-08-13 22:43:00 ERROR 发生错误，错误编号10
+2025-08-13 22:43:00 WARNING 登录失败
+2025-08-13 22:43:00 WARNING 任务 start_game 失败，终止后续操作
+2025-08-13 22:45:07 INFO 程序开始
+2025-08-13 22:45:07 INFO 以管理员权限运行
+2025-08-13 22:45:07 INFO 加载配置文件: D:\School\AutoLogin\config/config1.json
+2025-08-13 22:45:07 DEBUG 配置内容：{'game_name': '崩坏：星穹铁道', 'game_path': 'D:/Star Rail/Game/StarRail.exe', 'game_type': 'StarRail', 'server': '0', 'enable_login': True, 'username': '2981883527@qq.com', 'password': 'huangziyan123'}
+2025-08-13 22:45:07 INFO 等待游戏启动
+2025-08-13 22:45:12 INFO 启动成功
+2025-08-13 22:45:12 INFO 登录中
+2025-08-13 22:45:15 DEBUG 检测对象列表 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:45:17 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.235)
+2025-08-13 22:45:17 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.250)
+2025-08-13 22:45:17 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.293)
+2025-08-13 22:45:17 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.325)
+2025-08-13 22:45:17 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:45:18 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.328)
+2025-08-13 22:45:18 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.409)
+2025-08-13 22:45:18 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.369)
+2025-08-13 22:45:18 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.416)
+2025-08-13 22:45:18 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:45:19 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.328)
+2025-08-13 22:45:19 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.409)
+2025-08-13 22:45:19 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.369)
+2025-08-13 22:45:19 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.416)
+2025-08-13 22:45:19 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:45:20 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.310)
+2025-08-13 22:45:20 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.334)
+2025-08-13 22:45:20 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.339)
+2025-08-13 22:45:20 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.360)
+2025-08-13 22:45:20 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:45:21 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.261)
+2025-08-13 22:45:22 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.241)
+2025-08-13 22:45:22 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.312)
+2025-08-13 22:45:22 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.342)
+2025-08-13 22:45:22 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:45:23 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.338)
+2025-08-13 22:45:23 DEBUG 检测成功, 索引 1
+2025-08-13 22:45:23 INFO 登录状态 1
+2025-08-13 22:45:26 DEBUG 点击对象res/img/logout.png
+2025-08-13 22:45:26 DEBUG 点击对象时出错: res/img/logout.png: Could not locate the image (highest confidence = 0.447)
+2025-08-13 22:45:28 DEBUG 点击对象res/img/quit2.png
+2025-08-13 22:45:29 DEBUG 点击对象时出错: res/img/quit2.png: Could not locate the image (highest confidence = 0.265)
+2025-08-13 22:45:31 DEBUG 点击对象res/img/login_other.png
+2025-08-13 22:45:31 DEBUG 点击对象时出错: res/img/login_other.png: Could not locate the image (highest confidence = 0.411)
+2025-08-13 22:45:33 DEBUG 点击对象res/img/login_with_account.png
+2025-08-13 22:45:33 DEBUG 点击对象时出错: res/img/login_with_account.png: Could not locate the image (highest confidence = 0.397)
+2025-08-13 22:45:33 ERROR 发生错误，错误编号10
+2025-08-13 22:45:33 WARNING 登录失败
+2025-08-13 22:45:33 WARNING 任务 start_game 失败，终止后续操作
+2025-08-13 22:46:09 INFO 程序开始
+2025-08-13 22:46:09 INFO 以管理员权限运行
+2025-08-13 22:46:09 INFO 加载配置文件: D:\School\AutoLogin\config/config1.json
+2025-08-13 22:46:09 DEBUG 配置内容：{'game_name': '崩坏：星穹铁道', 'game_path': 'D:/Star Rail/Game/StarRail.exe', 'game_type': 'StarRail', 'server': '0', 'enable_login': True, 'username': '2981883527@qq.com', 'password': 'huangziyan123'}
+2025-08-13 22:46:09 INFO 等待游戏启动
+2025-08-13 22:46:14 INFO 启动成功
+2025-08-13 22:46:14 INFO 登录中
+2025-08-13 22:46:17 DEBUG 检测对象列表 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:46:18 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.235)
+2025-08-13 22:46:18 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.250)
+2025-08-13 22:46:18 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.292)
+2025-08-13 22:46:18 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.325)
+2025-08-13 22:46:18 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:46:19 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.328)
+2025-08-13 22:46:19 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.409)
+2025-08-13 22:46:19 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.369)
+2025-08-13 22:46:19 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.416)
+2025-08-13 22:46:19 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:46:20 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.328)
+2025-08-13 22:46:20 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.409)
+2025-08-13 22:46:20 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.369)
+2025-08-13 22:46:20 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.416)
+2025-08-13 22:46:20 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:46:22 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.315)
+2025-08-13 22:46:22 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.369)
+2025-08-13 22:46:22 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.364)
+2025-08-13 22:46:22 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.374)
+2025-08-13 22:46:22 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:46:23 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.262)
+2025-08-13 22:46:23 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.241)
+2025-08-13 22:46:23 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.312)
+2025-08-13 22:46:23 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.338)
+2025-08-13 22:46:23 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:46:24 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.338)
+2025-08-13 22:46:24 DEBUG 检测成功, 索引 1
+2025-08-13 22:46:24 INFO 登录状态 1
+2025-08-13 22:46:31 DEBUG 点击对象res/img/logout.png
+2025-08-13 22:46:31 DEBUG 点击对象时出错: res/img/logout.png: Could not locate the image (highest confidence = 0.444)
+2025-08-13 22:46:33 DEBUG 点击对象res/img/quit2.png
+2025-08-13 22:46:33 DEBUG 点击对象时出错: res/img/quit2.png: Could not locate the image (highest confidence = 0.386)
+2025-08-13 22:46:36 DEBUG 点击对象res/img/login_other.png
+2025-08-13 22:46:36 DEBUG 点击对象时出错: res/img/login_other.png: Could not locate the image (highest confidence = 0.399)
+2025-08-13 22:46:38 DEBUG 点击对象res/img/login_with_account.png
+2025-08-13 22:46:38 DEBUG 点击对象时出错: res/img/login_with_account.png: Could not locate the image (highest confidence = 0.388)
+2025-08-13 22:46:38 ERROR 发生错误，错误编号10
+2025-08-13 22:46:38 WARNING 登录失败
+2025-08-13 22:46:38 WARNING 任务 start_game 失败，终止后续操作
+2025-08-13 22:51:26 INFO 程序开始
+2025-08-13 22:51:26 INFO 以管理员权限运行
+2025-08-13 22:51:26 INFO 加载配置文件: D:\School\AutoLogin\config/config1.json
+2025-08-13 22:51:26 DEBUG 配置内容：{'game_name': '崩坏：星穹铁道', 'game_path': 'D:/Star Rail/Game/StarRail.exe', 'game_type': 'StarRail', 'server': '0', 'enable_login': True, 'username': '2981883527@qq.com', 'password': 'huangziyan123'}
+2025-08-13 22:51:26 INFO 等待游戏启动
+2025-08-13 22:51:31 INFO 启动成功
+2025-08-13 22:51:31 INFO 登录中
+2025-08-13 22:51:34 DEBUG 检测对象列表 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:51:35 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.235)
+2025-08-13 22:51:35 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.250)
+2025-08-13 22:51:35 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.292)
+2025-08-13 22:51:35 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.325)
+2025-08-13 22:51:35 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:51:36 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.329)
+2025-08-13 22:51:36 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.396)
+2025-08-13 22:51:36 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.370)
+2025-08-13 22:51:36 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.395)
+2025-08-13 22:51:36 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:51:38 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.328)
+2025-08-13 22:51:38 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.409)
+2025-08-13 22:51:38 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.369)
+2025-08-13 22:51:38 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.416)
+2025-08-13 22:51:38 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:51:39 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.314)
+2025-08-13 22:51:39 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.404)
+2025-08-13 22:51:39 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.404)
+2025-08-13 22:51:39 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.397)
+2025-08-13 22:51:39 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:51:40 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.250)
+2025-08-13 22:51:40 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.240)
+2025-08-13 22:51:40 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.312)
+2025-08-13 22:51:40 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.341)
+2025-08-13 22:51:40 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:51:41 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.338)
+2025-08-13 22:51:41 DEBUG 检测成功, 索引 1
+2025-08-13 22:51:41 INFO 登录状态 1
+2025-08-13 22:51:51 DEBUG 点击对象res/img/logout.png
+2025-08-13 22:51:54 DEBUG 点击对象res/img/quit2.png
+2025-08-13 22:51:56 DEBUG 点击对象res/img/login_other.png
+2025-08-13 22:51:58 DEBUG 点击对象res/img/login_with_account.png
+2025-08-13 22:51:58 INFO 登录到2981883527@qq.com
+2025-08-13 22:52:01 DEBUG 按下按键tab
+2025-08-13 22:52:06 DEBUG 点击对象res/img/agree.png
+2025-08-13 22:52:08 DEBUG 点击对象res/img/enter_game.png
+2025-08-13 22:52:08 DEBUG 检测对象 res/img/welcome.png
+2025-08-13 22:52:09 DEBUG 图像不存在 res/img/welcome.png: Could not locate the image (highest confidence = 0.260)
+2025-08-13 22:52:09 DEBUG 检测成功
+2025-08-13 22:52:09 INFO 登录成功
+2025-08-13 22:52:09 INFO 登录成功
+2025-08-13 22:52:10 DEBUG 检测对象 res/img/quit.png
+2025-08-13 22:52:11 DEBUG 检测成功
+2025-08-13 22:52:13 DEBUG 点击坐标960,540
+2025-08-13 22:52:16 INFO 开始游戏
+2025-08-13 22:52:16 DEBUG 检测对象 res/img/quit.png
+2025-08-13 22:52:17 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.325)
+2025-08-13 22:52:18 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.311)
+2025-08-13 22:52:19 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.290)
+2025-08-13 22:52:20 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.331)
+2025-08-13 22:52:21 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.292)
+2025-08-13 22:52:22 DEBUG 检测成功
+2025-08-13 22:52:22 DEBUG 点击坐标960,540
+2025-08-13 22:52:24 DEBUG 点击对象res/img/train_supply.png
+2025-08-13 22:52:24 DEBUG 点击对象时出错: res/img/train_supply.png: Could not locate the image (highest confidence = 0.201)
+2025-08-13 22:52:26 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.432)
+2025-08-13 22:52:26 TRACE res/img/phone.png: Could not locate the image (highest confidence = 0.225)
+2025-08-13 22:52:26 DEBUG 图像列表中没有任何图像存在 ['res/img/chat_enter.png', 'res/img/phone.png']
+2025-08-13 22:52:29 DEBUG 点击对象res/img/train_supply.png
+2025-08-13 22:52:29 DEBUG 点击对象时出错: res/img/train_supply.png: Could not locate the image (highest confidence = 0.233)
+2025-08-13 22:52:31 INFO 所有登录相关任务执行完毕
+2025-08-13 22:54:08 INFO 程序开始
+2025-08-13 22:54:08 INFO 以管理员权限运行
+2025-08-13 22:54:08 INFO 加载配置文件: D:\School\AutoLogin\config/config1.json
+2025-08-13 22:54:08 DEBUG 配置内容：{'game_name': '崩坏：星穹铁道', 'game_path': 'D:/Star Rail/Game/StarRail.exe', 'game_type': 'StarRail', 'server': '0', 'enable_login': True, 'username': '2981883527@qq.com', 'password': 'huangziyan123'}
+2025-08-13 22:54:08 INFO 等待游戏启动
+2025-08-13 22:54:13 INFO 启动成功
+2025-08-13 22:54:13 INFO 登录中
+2025-08-13 22:54:16 DEBUG 检测对象列表 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:54:17 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.235)
+2025-08-13 22:54:17 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.250)
+2025-08-13 22:54:17 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.292)
+2025-08-13 22:54:17 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.325)
+2025-08-13 22:54:17 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:54:18 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.328)
+2025-08-13 22:54:19 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.409)
+2025-08-13 22:54:19 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.369)
+2025-08-13 22:54:19 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.416)
+2025-08-13 22:54:19 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:54:20 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.328)
+2025-08-13 22:54:20 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.409)
+2025-08-13 22:54:20 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.369)
+2025-08-13 22:54:20 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.416)
+2025-08-13 22:54:20 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:54:21 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.315)
+2025-08-13 22:54:21 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.386)
+2025-08-13 22:54:21 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.384)
+2025-08-13 22:54:21 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.385)
+2025-08-13 22:54:21 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:54:22 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.255)
+2025-08-13 22:54:22 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.241)
+2025-08-13 22:54:22 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.312)
+2025-08-13 22:54:22 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.341)
+2025-08-13 22:54:22 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 22:54:23 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.338)
+2025-08-13 22:54:24 DEBUG 检测成功, 索引 1
+2025-08-13 22:54:24 INFO 登录状态 1
+2025-08-13 22:54:34 DEBUG 点击对象res/img/logout.png
+2025-08-13 22:54:36 DEBUG 点击对象res/img/quit2.png
+2025-08-13 22:54:38 DEBUG 点击对象res/img/login_other.png
+2025-08-13 22:54:40 DEBUG 点击对象res/img/login_with_account.png
+2025-08-13 22:54:41 INFO 登录到2981883527@qq.com
+2025-08-13 22:54:43 DEBUG 按下按键tab
+2025-08-13 22:54:48 DEBUG 点击对象res/img/agree.png
+2025-08-13 22:54:50 DEBUG 点击对象res/img/enter_game.png
+2025-08-13 22:54:50 DEBUG 检测对象 res/img/welcome.png
+2025-08-13 22:54:51 DEBUG 图像不存在 res/img/welcome.png: Could not locate the image (highest confidence = 0.242)
+2025-08-13 22:54:51 DEBUG 检测成功
+2025-08-13 22:54:51 INFO 登录成功
+2025-08-13 22:54:51 INFO 登录成功
+2025-08-13 22:54:52 DEBUG 检测对象 res/img/quit.png
+2025-08-13 22:54:53 DEBUG 检测成功
+2025-08-13 22:54:55 DEBUG 点击坐标960,540
+2025-08-13 22:54:58 INFO 开始游戏
+2025-08-13 22:54:58 DEBUG 检测对象 res/img/quit.png
+2025-08-13 22:54:59 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.329)
+2025-08-13 22:55:00 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.301)
+2025-08-13 22:55:01 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.299)
+2025-08-13 22:55:02 DEBUG 图像不存在 res/img/quit.png: Could not locate the image (highest confidence = 0.287)
+2025-08-13 22:55:03 DEBUG 检测成功
+2025-08-13 22:55:03 DEBUG 点击坐标960,540
+2025-08-13 22:55:05 DEBUG 点击对象res/img/train_supply.png
+2025-08-13 22:55:05 DEBUG 点击对象时出错: res/img/train_supply.png: Could not locate the image (highest confidence = 0.224)
+2025-08-13 22:55:07 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.432)
+2025-08-13 22:55:07 TRACE res/img/phone.png: Could not locate the image (highest confidence = 0.225)
+2025-08-13 22:55:07 DEBUG 图像列表中没有任何图像存在 ['res/img/chat_enter.png', 'res/img/phone.png']
+2025-08-13 22:55:10 DEBUG 点击对象res/img/train_supply.png
+2025-08-13 22:55:10 DEBUG 点击对象时出错: res/img/train_supply.png: Could not locate the image (highest confidence = 0.229)
+2025-08-13 22:55:12 INFO 所有登录相关任务执行完毕
+2025-08-13 23:04:58 INFO 程序开始
+2025-08-13 23:04:58 INFO 以管理员权限运行
+2025-08-13 23:04:58 INFO 加载配置文件: D:\School\AutoLogin\config/config1.json
+2025-08-13 23:04:58 DEBUG 配置内容：{'game_name': '崩坏：星穹铁道', 'game_path': 'D:/Star Rail/Game/StarRail.exe', 'game_type': 'StarRail', 'server': '0', 'enable_login': True, 'username': '2981883527@qq.com', 'password': 'huangziyan123'}
+2025-08-13 23:04:58 INFO 游戏已经启动
+2025-08-13 23:04:58 INFO 登录中
+2025-08-13 23:05:01 DEBUG 检测对象列表 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 23:05:02 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:03 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:04 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:05 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:06 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:07 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:08 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:09 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:10 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.437)
+2025-08-13 23:05:10 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.463)
+2025-08-13 23:05:10 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.295)
+2025-08-13 23:05:10 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.409)
+2025-08-13 23:05:10 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 23:05:11 TRACE res/img/login_page.png: Could not locate the image (highest confidence = 0.479)
+2025-08-13 23:05:12 TRACE res/img/welcome.png: Could not locate the image (highest confidence = 0.411)
+2025-08-13 23:05:12 TRACE res/img/quit.png: Could not locate the image (highest confidence = 0.380)
+2025-08-13 23:05:12 TRACE res/img/chat_enter.png: Could not locate the image (highest confidence = 0.367)
+2025-08-13 23:05:12 DEBUG 图像列表中没有任何图像存在 ['res/img/login_page.png', 'res/img/welcome.png', 'res/img/quit.png', 'res/img/chat_enter.png']
+2025-08-13 23:05:13 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:14 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:15 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:16 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:17 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:18 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:19 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:20 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:21 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:22 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:23 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:24 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:25 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:26 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:27 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:28 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:29 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:30 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:31 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:32 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:33 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:34 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:35 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:36 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:37 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:38 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:39 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:40 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:41 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:42 DEBUG 在检查图像列表时失败: Error code from Windows: 0 - 操作成功完成。
+2025-08-13 23:05:42 DEBUG 检测失败, 超出最大次数
+2025-08-13 23:05:42 INFO 登录状态 None
