@@ -472,9 +472,18 @@ class SRAOperator:
             x, y = cls.locateCenter(img_path, x_add, y_add, title)
             pyautogui.click(x, y)
             return True
-        except Exception as e:
-            logger.debug(f"点击对象时出错: {e}")
+        except FileNotFoundError:
+            logger.debug(f"无法找到图像文件: {img_path}")
             return False
+        except MatchFailureException:
+            logger.debug(f"在屏幕上未找到图像: {img_path}")
+            return False
+        except WindowInactiveException:
+            logger.debug("窗口未激活，无法执行点击操作")
+            return False
+        # except Exception as e:
+        #     logger.debug(f"点击对象时出错: {e}")
+        #     return False
 
     @classmethod
     def click_point(cls, x: int | None, y: int | None) -> bool:
