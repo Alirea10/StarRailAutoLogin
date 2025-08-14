@@ -3,6 +3,8 @@ import sys
 import ctypes
 import json
 import time
+import webbrowser
+import winreg
 
 from SRACore.utils import WindowsProcess
 from SRACore.utils.WindowsProcess import find_window, Popen
@@ -41,7 +43,16 @@ def check(img_path, interval=0.5, max_time=40):
 
 def write(content: str = "") -> bool:
     return SRAOperator.write(content)
-# 登录类
+# 检查Starward是否安装并注册了URL协议
+def check_starward_URL(scheme) -> bool:
+    try:
+        key = winreg.OpenKey(winreg.HKEY_CLASSES_ROOT, scheme)
+        winreg.CloseKey(key)
+        return True
+    except FileNotFoundError:
+        return False
+
+
 class Login:
     def __init__(self, game_path, game_type, enable_login=False, server=None, username=None, password=None):
         self.game_path = game_path
@@ -58,6 +69,7 @@ class Login:
                 logger.warning("你尝试输入一个其他应用的路径")
                 return False
             else:
+                logger.debug(f"游戏路径校验通过{path}，类型为{path_type}")
                 return True
         else:
             logger.warning("游戏路径为空")
@@ -74,7 +86,7 @@ class Login:
             logger.error("启动失败")
             return False
         logger.info("等待游戏启动")
-        time.sleep(5)
+        time.sleep(2)
         times = 0
         while True:
             if find_window("崩坏：星穹铁道"):
@@ -86,6 +98,25 @@ class Login:
                 if times == 40:
                     logger.error("启动时间过长，请尝试手动启动")
                     return False
+
+    @staticmethod
+    def launch_Starward(channel):
+        if check_starward_URL:
+            logger.info("准备启动游戏")
+            if channel == 0:
+                url = "starward://startgame/hkrpg_cn"
+                webbrowser.open(url)
+                return True
+            elif channel == 1:
+                url = "starward://startgame/hkrpg_bilibili"
+                webbrowser.open(url)
+                return True
+            else:
+                logger.error("暂不支持除了官服b服以外的其他渠道")
+                return False
+        else:
+            logger.error("尚未启动Starward的URL协议，请打开Starward→设置→高级→URL协议 启动url协议")
+            return False
 
     @staticmethod
     def check_game():
@@ -104,10 +135,15 @@ class Login:
                 logger.warning("游戏启动失败")
                 return False
         elif path_type == "launcher":
-            # 这里如有 launcher 启动逻辑可补充
             logger.warning("暂未实现 launcher 启动")
             return False
+        elif path_type == "Starward":
+            logger.info("使用 Starward 启动")
+            if not self.launch_Starward(channel):
+                logger.warning("Starward 启动失败")
+                return False
 
+        # 打开游戏后进行登录
         if channel == 0:
             if login_flag:
                 match self.login_official(account, password):
@@ -122,8 +158,12 @@ class Login:
                     case _:
                         logger.error("未知登录状态")
                         return False
-            time.sleep(1)
-            if check("res/img/quit.png", max_time=120):
+            time.sleep(3)
+            result = check_any(["res/img/quit.png","res/img/enter_game.png"], interval=0.5, max_time=30)
+            if result==0:
+                self.start_game_click()
+            elif result==1:
+                click("res/img/enter_game.png")
                 self.start_game_click()
         elif channel == 1:
             self.login_bilibili(account, password)
@@ -152,9 +192,8 @@ class Login:
         # 若已经登录，则退出登录
         elif result == 1 or result == 2:
             # 等火车头...
-            if result == 1:
-                time.sleep(8)
-            click("res/img/logout.png")
+            if check("res/img/logout.png",interval=0.5, max_time=30):
+                click("res/img/logout.png")
             time.sleep(0.1)
             click("res/img/quit2.png")
             time.sleep(0.1)
