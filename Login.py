@@ -243,9 +243,8 @@ if __name__ == "__main__":
     # 读取 id 参数
     if len(sys.argv) < 2:
         logger.warning("未给定参数 id，默认为1，请给定参数设置例如: python Login.py 1")
-        config_id = sys.argv[1] if len(sys.argv) > 1 else "1"
+    config_id = sys.argv[1] if len(sys.argv) > 1 else "1"
     # 如果没有给定参数，默认使用第一个配置
-
     config_path = os.path.join(os.path.dirname(__file__), "config/config.json")
     logger.info(f"加载配置文件: {config_path}，使用第 {config_id} 配置")
     with open(config_path, "r", encoding="utf-8") as f:
