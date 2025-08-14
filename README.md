@@ -42,13 +42,19 @@ username/password：正如其名，账号和密码，**目前它是明文保存�
 
 ## 使用方法
 
-###  直接使用
+###  下载源码直接使用
 
 1. 自行配置好AUTO-MAA的通用配置，请先了解AUTO_MAA项目并阅读[通用调度 | AUTO_MAA文档](https://doc.automaa.xyz/general-manager.html)或查看[AUTO_MAA_v4.4.1官方使用教程 45：40的通用脚本配置部分](https://www.bilibili.com/video/BV169hnzRE16?vd_source=1b23dbecbe67cf121377aea29d2373e7)，可选择从「AUTO_MAA配置分享中心」导入（推荐）或自行配置
+
 2. 在下方的“下属配置”中，创建一个新配置，打开脚本前置任务并选择start.bat文件
+
 3. 安装python（3.9至3.11（推荐））环境，并安装requirements.txt。
+   `pip install requirements.txt `
+
    *若你有python的开发经验，你可以创造一个虚拟环境以供使用（推荐但非必须）*
+
 4. 根据上面的配置说明填写config文件
+
 5. 尝试启动start.bat，查看是否正常运行，正常运行即可在AUTO-MAA中使用 
 
 ### Startward额外操作
