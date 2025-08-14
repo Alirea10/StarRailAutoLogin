@@ -1,5 +1,4 @@
 log/
 *.lnk
-.venv1
-.venv
-.idea
+.idea/
+config/

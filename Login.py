@@ -176,7 +176,7 @@ class Login:
 
     @staticmethod
     def login_official(account, password):
-        logger.info("登录中")
+        logger.info("官服登录中")
         time.sleep(3)
         result = check_any(
             # 分别对应登录状态 0: 未登录, 1: 已有登录, 2: 已有登录, 3: 已进入游戏
@@ -225,20 +225,67 @@ class Login:
 
     @staticmethod
     def login_bilibili(account, password):
-        if not check("res/img/bilibili_login.png", interval=0.2, max_time=20):
-            logger.error("检测超时，编号3")
-            return False
-        if click('res/img/bilibili_account.png'):
-            logger.info("登录到" + account)
+        logger.info("B服登录中")
+        time.sleep(3)
+        result = check_any(
+            # 分别对应登录状态 0: 未登录, 1: 已有登录, 2: 已有登录, 3: 已进入游戏
+            ["res/img/bilibili_login_page.png", "res/img/bilibili_welcome.png", "res/img/quit.png", "res/img/chat_enter.png"])
+
+        logger.info(f"登录状态 {result}")
+        resolution = SRAOperator.resolution_detect()
+        if resolution[1] / resolution[0] != 9 / 16:
+            logger.warning("检测到游戏分辨率不为16:9, 自动登录可能无法按预期运行")
+
+        if result is not None and result == 3:
+            return result
+        # 若已经登录，则退出登录
+        elif result == 1 or result == 2:
+            # 等火车头...
+            if check("res/img/logout.png",interval=0.5, max_time=30):
+                click("res/img/logout.png")
+            time.sleep(0.1)
+            click("res/img/enter.png")
             time.sleep(0.5)
-            write(account)
-        if click('res/img/bilibili_pwd.png'):
-            time.sleep(0.5)
-            write(password)
-        click('res/img/bilibili_remember.png')
-        click("res/img/bilibili_read.png", x_add=-30)
-        click("res/img/bilibili_login.png")
-        return True
+            click("res/img/bilibili_login_other.png")
+        else:
+            click("res/img/bilibili_login_other.png")
+        if not click("res/img/bilibili_login_with_account.png"):
+            logger.error("发生错误，错误编号10")
+            return 0
+        logger.info("登录到" + account)
+        time.sleep(1)
+        SRAOperator.copy(account)
+        SRAOperator.paste()
+        time.sleep(1)
+        press_key("tab")
+        time.sleep(0.2)
+        SRAOperator.copy(password)
+        SRAOperator.paste()
+        click("res/img/bilibili_agree.png", -260)
+        if not click("res/img/enter_game.png"):
+            logger.error("发生错误，错误编号9")
+            return 0
+        if check("res/img/welcome.png", interval=0.2, max_time=20):
+            logger.info("登录成功")
+            return 1
+        else:
+            logger.warning("长时间未成功登录，可能密码错误或需要新设备验证")
+            return 0
+
+        # if not check("res/img/bilibili_login.png", interval=0.2, max_time=20):
+        #     logger.error("检测超时，编号3")
+        #     return False
+        # if click('res/img/bilibili_account.png'):
+        #     logger.info("登录到" + account)
+        #     time.sleep(0.5)
+        #     write(account)
+        # if click('res/img/bilibili_pwd.png'):
+        #     time.sleep(0.5)
+        #     write(password)
+        # click('res/img/bilibili_remember.png')
+        # click("res/img/bilibili_read.png", x_add=-30)
+        # click("res/img/bilibili_login.png")
+        # return True
 
     @staticmethod
     def start_game_click():
@@ -293,7 +340,6 @@ if __name__ == "__main__":
         logger.error(f"未找到 id={config_id} 的配置，请检查 config.json")
         sys.exit(1)
     config = all_config[config_id]
-    logger.debug(f"配置内容：{config}")
 
     login = Login(
         game_path=config["game_path"],
