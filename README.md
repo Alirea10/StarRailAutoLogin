@@ -30,7 +30,7 @@ AUTO-MAA + 三月七小助手 + Starward（官服/b服）
 
 game_name：现阶段没啥用，接下来如果要适配原神、绝区零甚至其他更多游戏，可能会用上
 
-game_path：星铁位置，用于启动星铁。**请注意，StarWard的硬链接用户不能直接使用此path，请使用StarWard启动器适配，当使用Starward时**
+game_path：星铁位置，用于启动星铁。**请注意，StarWard的硬链接用户不能直接使用此path，请使用StarWard启动器适配，当使用Starward时，此项可以不填**
 
 game_type：上述path的类型，目前有StarRail和Starward两种，前者为直接打开游戏exe，后者是通过Starward的URL协议来打开。SRA（但是现在此项目还不）支持官，B的启动器，通过启动器进行启动更新等操作。
 
@@ -65,17 +65,17 @@ username/password：正如其名，账号和密码，**目前它是明文保存�
 
 未列出为尚未测试，理论上SRA不需要本项目也能通过直接和AUTO-MAA配合登录使用，但尚未了解是否能无人值守切换账号/服务器。
 
-当前B服尚未进行登录适配
+当前B服尚已经进行登录适配，但小概率出现验证码，请不要输错密码导致重复登录进而出现验证码。
 
 - [x] AUTO-MAA + 三月七小助手 +官服
 - [ ] AUTO-MAA + 三月七小助手 +B服
 - [x] AUTO-MAA + 三月七小助手 +Starward（官服）
-- [ ] AUTO-MAA + 三月七小助手 +B服
+- [x] AUTO-MAA + 三月七小助手 +Starward（B服）
 
 ## TODO
 
 - [ ] 优化config逻辑，完善bat传参逻辑
 - [ ] 编写退出脚本，以适配AUTO-MAA的无缝换号链接
-- [ ] 适配b服登录
+- [x] 适配b服登录
 - [x] 适配Starward的识别，启动等
 - [ ] 适配官方（b服）启动器
