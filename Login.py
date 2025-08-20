@@ -143,21 +143,21 @@ class Login:
         return True
 
     def start_game(self, game_path, path_type, channel=0, login_flag=False, account="", password=""):
-        if find_window("崩坏：星穹铁道"):
-            logger.info("游戏已经启动")
-            return True
-        if path_type == "StarRail":
-            if not self.launch_game(game_path, path_type):
-                logger.warning("游戏启动失败")
+        if not find_window("崩坏：星穹铁道"):
+            if path_type == "StarRail":
+                if not self.launch_game(game_path, path_type):
+                    logger.warning("游戏启动失败")
+                    return False
+            elif path_type == "launcher":
+                logger.warning("暂未实现 launcher 启动")
                 return False
-        elif path_type == "launcher":
-            logger.warning("暂未实现 launcher 启动")
-            return False
-        elif path_type == "Starward":
-            logger.info("使用 Starward 启动")
-            if not self.launch_Starward(channel):
-                logger.warning("Starward 启动失败")
-                return False
+            elif path_type == "Starward":
+                logger.info("使用 Starward 启动")
+                if not self.launch_Starward(channel):
+                    logger.warning("Starward 启动失败")
+                    return False
+            else:
+                logger.info("游戏已经启动")
 
         # 打开游戏后进行登录
         if login_flag:
