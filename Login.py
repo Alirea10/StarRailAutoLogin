@@ -243,9 +243,12 @@ class Login:
     def login_bilibili(account, password):
         logger.info("B服登录中")
         result = check_any(
-            # 分别对应登录状态 0: 未登录, 1: 已有登录, 2: 已有登录, 3: 已进入游戏
-            ["res/img/bilibili_login_page.png", "res/img/bilibili_welcome.png", "res/img/quit.png",
-             "res/img/chat_enter.png"])
+            # 分别对应登录状态 0: 未登录, 1: 遇到用户协议, 2: 已有登录, 3: 已进入游戏
+            ["res/img/bilibili_login_page.png",
+             "res/img/bilibili_agree3.png",
+             "res/img/quit.png",
+             "res/img/chat_enter.png"
+             ])
 
         logger.info(f"登录状态 {result}")
         resolution = SRAOperator.resolution_detect()
@@ -256,6 +259,9 @@ class Login:
             return result
         # 若已经登录，则退出登录
         elif result == 1 or result == 2:
+            # 如果遇到用户协议，点击同意
+            if result ==1 and check("res/img/bilibili_agree3.png"):
+                click("res/img/bilibili_agree3.png")
             # 等火车头...
             if check("res/img/logout.png", interval=0.5, max_time=30):
                 click("res/img/logout.png")
