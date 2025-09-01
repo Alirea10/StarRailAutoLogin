@@ -342,7 +342,7 @@ class SRAOperator:
 
     @classmethod
     def existAny(cls, img_list: list, wait_time: float = performance,
-                 need_location: bool = False) -> int | None | tuple:
+                 need_location: bool = False,title="崩坏：星穹铁道") -> int | None | tuple:
         """
         检查图像列表中是否有任何图像存在于截图中。
 
@@ -354,6 +354,7 @@ class SRAOperator:
             img_list (list): 包含要定位的图像文件路径的列表。
             wait_time (float, optional): 等待游戏加载的时间，默认为 2 秒。
             need_location (bool, optional): 是否需要返回图像的位置，默认为 False。
+            title: 激活窗口的标题
 
         Returns:
             int | None | tuple: 如果有图像存在且 `need_location` 为 False，则返回该图像在列表中的索引；
@@ -362,6 +363,13 @@ class SRAOperator:
         """
         time.sleep(wait_time)  # 等待游戏加载
         try:
+            #尝试激活窗口
+            matching_windows = pygetwindow.getWindowsWithTitle(title)
+            if len(matching_windows) == 0:
+                raise WindowNoFoundException('找不到窗口 %s' % title)
+            win = matching_windows[0]
+            win.activate()
+
             index, location = cls.locateAny(img_list)
             if need_location:
                 return index, cls._location_calculator(*pyscreeze.center(location))
@@ -371,6 +379,7 @@ class SRAOperator:
             logger.debug(f"图像列表中没有任何图像存在 {img_list}")
             return None
         except Exception as e:
+
             logger.debug(f"在检查图像列表时失败: {e}")
             return None
 
