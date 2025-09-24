@@ -6,9 +6,7 @@ from enum import StrEnum
 from threading import Lock
 from typing import Union
 
-# from PySide6.QtCore import QObject, Signal
 from rich.console import Console
-# from rich.theme import Theme
 
 
 class Level(StrEnum):
@@ -213,26 +211,9 @@ class CallbackHandler(Handler):
             except Exception as e:
                 print(f"回调处理日志失败: {e}")
 
-
-# class LogEmitter(QObject):
-#     """Log Emitter for logging messages in the GUI."""
-#
-#     log_signal = Signal(str)
-#
-#     def log_emit(self, text):
-#         """Emit a signal with the given text."""
-#         self.log_signal.emit(text)
-
-
-# 实例化日志记录器
-# log_emitter = LogEmitter()  # 用于 GUI 日志信号发射
 logger = Logger()
-# if sys.stdout.isatty():
-    # 如果标准输出是终端，则添加 Rich 控制台处理器
 logger.add_handler(ConsoleHandler())
 logger.success("Rich 控制台日志处理器已启用")
 if not os.path.exists("log"):
     os.mkdir("log")
-logger.add_handler(FileHandler("log/SRAlog.log", level=Level.TRACE))
-# logger.add_handler(CallbackHandler(log_emitter.log_emit, level=Level.INFO))
-# __all__ = ["logger", "Level", "log_emitter"]
+logger.add_handler(FileHandler("log/log.log", level=Level.TRACE))
