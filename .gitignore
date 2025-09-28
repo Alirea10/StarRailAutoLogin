@@ -2,3 +2,11 @@ log/
 *.lnk
 .idea/
 config/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.venv/
+venv/
