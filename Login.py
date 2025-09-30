@@ -568,7 +568,7 @@ class Login:
         if result is not None and result == 3:
             return 3
         # 如果已经登录，先登出
-        if result == 1:
+        if result == 2:
             login_instance._handle_logout_process(0)
         else:
             # 先check再click其他登录方式
