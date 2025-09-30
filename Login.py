@@ -295,7 +295,7 @@ class Login:
         return self.wait_game_load()
 
     @staticmethod
-    def _detect_login_state(channel):
+    def _detect_login_state(self,channel):
         """
         检测当前登录状态
 
@@ -318,8 +318,7 @@ class Login:
                 if check("res/img/agree3.png", interval=0.5, max_time=5):
                     if not click("res/img/agree3.png"):
                         logger.error("无法点击用户协议按钮")
-                        return 0
-                    result = 2
+                        return self._detect_login_state
                 else:
                     logger.error("用户协议按钮已消失")
                     return 0
@@ -569,7 +568,6 @@ class Login:
         # 如果已经在游戏中，直接返回
         if result is not None and result == 3:
             return 3
-
         # 如果已经登录，先登出
         if result == 1:
             login_instance._handle_logout_process(0)
