@@ -1,5 +1,4 @@
 import os
-import sys
 import time
 from abc import ABC, abstractmethod
 from enum import StrEnum

@@ -6,7 +6,8 @@
     "server": "0",
     "enable_login": true,
     "username": "user1@example.com",
-    "password": "password1"
+    "password": "password1",
+    "log_level": "INFO"
   },
   "2": {
     "game_name": "崩坏：星穹铁道",
@@ -15,7 +16,8 @@
     "server": "1",
     "enable_login": true,
     "username": "user2@example.com",
-    "password": "password2"
+    "password": "password2",
+    "log_level": "INFO"
   },
   "3": {
     "game_name": "崩坏：星穹铁道",
@@ -24,7 +26,8 @@
     "server": "1",
     "enable_login": false,
     "username": "",
-    "password": ""
+    "password": "",
+    "log_level": "INFO"
   },
   "这是个例子": {
     "game_name": "游戏名字，暂时没啥用",
@@ -33,6 +36,7 @@
     "server": "服务器，0为官服，1为B服",
     "enable_login": "是否启用自动登录，true为启用，false为不启用，布尔值。如果不启用，用户名和密码可以留空",
     "username": "",
-    "password": ""
+    "password": "",
+    "log_level": "日志等级，可选值: TRACE, DEBUG, INFO, SUCCESS, WARNING, ERROR, EXCEPTION。默认为INFO"
   }
 }

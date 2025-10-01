@@ -8,8 +8,36 @@ import winreg
 
 from SRACore.utils import WindowsProcess
 from SRACore.utils.WindowsProcess import find_window, Popen
-from SRACore.utils.Logger import logger
+from SRACore.utils.Logger import logger, Level
 from SRACore.utils.SRAOperator import SRAOperator
+
+
+def set_log_level(level_str: str = "INFO"):
+    """
+    设置日志等级
+
+    Args:
+        level_str (str): 日志等级字符串，可选值: TRACE, DEBUG, INFO, SUCCESS, WARNING, ERROR, EXCEPTION
+    """
+    try:
+        # 验证日志等级是否有效
+        log_level = Level(level_str.upper())
+
+        # 设置所有控制台处理器的日志等级
+        for handler in logger.handlers:
+            if hasattr(handler, 'console'):  # 控制台处理器
+                handler.set_level(log_level)
+
+        logger.info(f"日志等级已设置为: {log_level.value}")
+        logger.debug(f"[set_log_level] 日志等级设置成功: {log_level.value}")
+
+    except ValueError:
+        logger.warning(f"无效的日志等级: {level_str}，使用默认等级 INFO")
+        logger.debug(f"[set_log_level] 日志等级设置失败，使用默认值")
+        # 设置为默认的INFO等级
+        for handler in logger.handlers:
+            if hasattr(handler, 'console'):
+                handler.set_level(Level.INFO)
 
 
 # 工具函数
@@ -1046,6 +1074,11 @@ if __name__ == "__main__":
     config = all_config[config_id]
     logger.debug(f"[main] 成功加载配置: {config_id}")
 
+    # 设置日志等级
+    log_level = config.get("log_level", "INFO")
+    logger.debug(f"[main] 从配置读取到日志等级: {log_level}")
+    set_log_level(log_level)
+
     logger.debug("[main] 开始初始化Login实例")
     login = Login(
         game_path=config["game_path"],
@@ -1056,11 +1089,6 @@ if __name__ == "__main__":
         password=config.get("password")
     )
 
-    # 0 - 正在启动
-    # 1 - 同意用户协议
-    # 2.1 - 已登录,是正确的游戏账号登录
-    # 2.2 - 已登录,但不是正确的账号,进行登出再登录
-    # 2.3 - 未登录,进行登录
 
     # 串行任务执行 - 简化版
     logger.debug("[main] 开始执行主任务流程")
@@ -1099,5 +1127,3 @@ if __name__ == "__main__":
         logger.debug("[main] 路径检查失败")
 
     logger.debug("[main] 程序执行完成")
-    # 你真的需要它吗？它为什么在这里？我不知道，你得和一闪而过的控制台说去
-    # input("按回车键退出...")
