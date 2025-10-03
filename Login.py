@@ -753,7 +753,7 @@ class Login:
                 logger.debug("[_input_credentials] 找到官服进入游戏按钮")
                 result = click("res/img/enter_game.png")
                 logger.debug(f"[_input_credentials] 官服进入游戏按钮点击结果: {result}")
-                return result
+                return True
             else:
                 logger.error("官服进入游戏按钮未找到")
                 logger.debug("[_input_credentials] 官服进入游戏按钮未找到")
