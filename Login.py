@@ -210,7 +210,7 @@ class Login:
             bool: 启动是否成功
         """
         logger.debug(f"[launch_game] 开始启动游戏: {game_path}, 类型: {path_type}")
-
+        # TODO 游戏已经启动还得检查是不是已经登进游戏里面了
         # 检查游戏是否已经启动
         if find_window("崩坏：星穹铁道"):
             logger.info("游戏已经启动")
@@ -576,12 +576,12 @@ class Login:
         else:
             logger.debug("[_handle_logout_process] 未找到登出按钮")
 
-        time.sleep(0.1)
+        time.sleep(1)
 
         if channel == 0:
             # 官服登出流程
             logger.debug("[_handle_logout_process] 处理官服登出流程")
-            if check("res/img/quit2.png", interval=0.5, max_time=5):
+            if check("res/img/quit2.png", interval=0.5, max_time=25):
                 logger.debug("[_handle_logout_process] 找到官服退出按钮")
                 if not click("res/img/quit2.png"):
                     logger.error("无法点击官服退出按钮")
@@ -597,7 +597,7 @@ class Login:
             time.sleep(0.1)
 
             logger.debug("[_handle_logout_process] 检查官服其他登录按钮")
-            if check("res/img/login_other.png", interval=0.5, max_time=5):
+            if check("res/img/login_other.png", interval=0.5, max_time=25):
                 if not click("res/img/login_other.png"):
                     logger.error("无法点击官服其他登录按钮")
                     logger.debug("[_handle_logout_process] 官服其他登录按钮点击失败")
