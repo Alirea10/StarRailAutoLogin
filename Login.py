@@ -130,7 +130,8 @@ def check_starward_URL(scheme) -> bool:
 
 class Login:
     def __init__(self, game_path, game_type, enable_login=False, server=None, username=None, password=None):
-        logger.debug(f"[Login.__init__] 初始化Login实例, 游戏路径: {game_path}, 游戏类型: {game_type}, 启用登录: {enable_login}, 服务器: {server}")
+        logger.debug(
+            f"[Login.__init__] 初始化Login实例, 游戏路径: {game_path}, 游戏类型: {game_type}, 启用登录: {enable_login}, 服务器: {server}")
         self.game_path = game_path
         self.game_type = game_type
         self.enable_login = enable_login
@@ -175,7 +176,6 @@ class Login:
             logger.warning("游戏路径为空")
             logger.debug("[path_check] 路径校验失败: 路径为空")
             return False
-
 
     @staticmethod
     def _wait_for_game_startup():
@@ -352,7 +352,8 @@ class Login:
         Returns:
             bool: 登录是否成功，True表示可以继续后续流程
         """
-        logger.debug(f"[_handle_login_process] 开始处理登录流程: 渠道={channel}, 账号={account[:3]}***{account[-2:] if len(account) > 5 else '***'}")
+        logger.debug(
+            f"[_handle_login_process] 开始处理登录流程: 渠道={channel}, 账号={account[:3]}***{account[-2:] if len(account) > 5 else '***'}")
 
         if channel == 0:
             # 官服登录处理
@@ -789,7 +790,7 @@ class Login:
             x, y = SRAOperator.get_screen_center()
 
             # 检查是否处于登录页(以12+标志为准)，进入火车头界面
-            if check("res/img/12+.png",0.5,10):
+            if check("res/img/12+.png", 0.5, 10):
                 click_point(x, y)
                 time.sleep(3)
 
@@ -808,7 +809,7 @@ class Login:
         """
         logger.debug(f"[_wait_for_login_result] 开始等待登录结果，渠道: {channel}")
 
-        if channel==0:
+        if channel == 0:
             logger.debug("[_wait_for_login_result] 等待官服登录结果")
             if check("res/img/click_start.png", interval=0.4, max_time=60):
                 logger.debug("[_wait_for_login_result] 检测到官服点击开始按钮")
@@ -823,13 +824,13 @@ class Login:
 
         elif channel == 1:
             logger.debug("[_wait_for_login_result] 等待B服登录结果")
-            result =check_any(["res/img/click_start.png","res/img/bilibili_verify.png"], interval=0.4, max_time=60)
+            result = check_any(["res/img/click_start.png", "res/img/bilibili_verify.png"], interval=0.4, max_time=60)
             logger.debug("[_wait_for_login_result] 检测到官服点击开始按钮")
             click("res/img/click_start.png")
             logger.success("已成功登入游戏")
             logger.debug("[_wait_for_login_result] 官服登录成功")
             # B服验证码处理
-            if result==0:
+            if result == 0:
                 logger.info("登录成功")
                 logger.debug("[_wait_for_login_result] B服登录成功")
                 return True
@@ -878,7 +879,8 @@ class Login:
             int: 登录状态码
         """
         logger.info("官服登录中")
-        logger.debug(f"[login_official] 开始官服登录流程，账号: {account[:3]}***{account[-2:] if len(account) > 5 else '***'}")
+        logger.debug(
+            f"[login_official] 开始官服登录流程，账号: {account[:3]}***{account[-2:] if len(account) > 5 else '***'}")
         login_instance = Login("", "")  # 临时实例用于调用实例方法
 
         # 检测登录状态
@@ -936,7 +938,8 @@ class Login:
             int: 登录状态码
         """
         logger.info("B服登录中")
-        logger.debug(f"[login_bilibili] 开始B服登录流程，账号: {account[:3]}***{account[-2:] if len(account) > 5 else '***'}")
+        logger.debug(
+            f"[login_bilibili] 开始B服登录流程，账号: {account[:3]}***{account[-2:] if len(account) > 5 else '***'}")
         login_instance = Login("", "")  # 临时实例用于调用实例方法
 
         # 检测登录状态
@@ -996,7 +999,8 @@ class Login:
 
             # 处理月卡界面
             logger.debug("[wait_game_load] 检查月卡界面")
-            if check("res/img/train_supply.png"):
+            res = check_any(["res/img/train_supply.png", "res/img/chat_enter.png", "res/img/phone.png"])
+            if res is not None and res == 0:
                 logger.debug("[wait_game_load] 检测到月卡界面，处理中")
                 click("res/img/train_supply.png")
                 time.sleep(4)
@@ -1005,23 +1009,18 @@ class Login:
                 SRAOperator.moveRel(0, +400)
                 click()
                 logger.debug("[wait_game_load] 月卡处理完成")
-
-            # 检查是否已进入大世界（聊天框或手机图标）
-            logger.debug("[wait_game_load] 检查是否已进入大世界")
-            res = SRAOperator.existAny(["res/img/chat_enter.png", "res/img/phone.png"])
-            logger.debug(f"[wait_game_load] 大世界检测结果: {res}")
-
-            if res is not None:
+                return True
+            elif res == 1 or res == 2:
                 logger.info("成功进入大世界")
                 logger.debug("[wait_game_load] 游戏加载完成，已进入大世界")
                 return True
             else:
                 times += 1
-                if times == 50:  # 50秒超时
+                if times == 30:  # 30秒超时
                     logger.error("发生错误，可能进入游戏但未处于大世界")
                     logger.debug(f"[wait_game_load] 等待超时，已等待{times}秒")
                     return False
-                logger.debug(f"[wait_game_load] 未检测到大世界，继续等待 ({times}/50)")
+                logger.debug(f"[wait_game_load] 未检测到大世界，继续等待 ({times}/30)")
             time.sleep(1)
 
 
@@ -1082,7 +1081,6 @@ if __name__ == "__main__":
         username=config.get("username"),
         password=config.get("password")
     )
-
 
     # 串行任务执行 - 简化版
     logger.debug("[main] 开始执行主任务流程")
