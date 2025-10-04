@@ -798,7 +798,7 @@ class Login:
 
     def _wait_for_login_result(self, channel):
         """
-        等待登录结果
+        执行登录后操作，等待登录结果
 
         Args:
             channel (int): 服务器渠道
@@ -824,7 +824,10 @@ class Login:
         elif channel == 1:
             logger.debug("[_wait_for_login_result] 等待B服登录结果")
             result =check_any(["res/img/click_start.png","res/img/bilibili_verify.png"], interval=0.4, max_time=60)
-            logger.debug(f"[_wait_for_login_result] B服检测结果: {result}")
+            logger.debug("[_wait_for_login_result] 检测到官服点击开始按钮")
+            click("res/img/click_start.png")
+            logger.success("已成功登入游戏")
+            logger.debug("[_wait_for_login_result] 官服登录成功")
             # B服验证码处理
             if result==0:
                 logger.info("登录成功")
@@ -894,17 +897,17 @@ class Login:
             login_instance._handle_logout_process(0)
         # 如果从未登录，点击一次使用账号密码登录再进行登录
         else:
-            logger.debug("[login_official] 点击其他登录方式")
-            if check("res/img/login_other.png", interval=0.5, max_time=5):
-                if not click("res/img/login_other.png"):
-                    logger.error("无法点击官服其他登录方式按钮")
-                    logger.debug("[login_official] 官服其他登录方式按钮点击失败")
+            logger.debug("[login_official] 点击使用账号登录")
+            if check("res/img/login_with_account.png", interval=0.5, max_time=5):
+                if not click("res/img/login_with_account.png"):
+                    logger.error("无法点击使用账号登录")
+                    logger.debug("[login_official] 官服点击使用账号登录失败")
                     return False
                 else:
-                    logger.debug("[login_official] 官服其他登录方式按钮点击成功")
+                    logger.debug("[login_official] 官服点击使用账号登录成功")
             else:
-                logger.error("官服其他登录方式按钮未找到")
-                logger.debug("[login_official] 官服其他登录方式按钮未找到")
+                logger.error("官服使用账号登录按钮未找到")
+                logger.debug("[login_official] 官服使用账号登录按钮未找到")
                 return False
 
         # 执行登录流程
@@ -952,17 +955,17 @@ class Login:
             login_instance._handle_logout_process(1)
         else:
             # 先check再click其他登录方式
-            logger.debug("[login_bilibili] 点击其他登录方式")
-            if check("res/img/bilibili_login_other.png", interval=0.5, max_time=5):
-                if not click("res/img/bilibili_login_other.png"):
-                    logger.error("无法点击B服其他登录方式按钮")
-                    logger.debug("[login_bilibili] B服其他登录方式按钮点击失败")
+            logger.debug("[login_bilibili] 点击使用账密登录")
+            if check("res/img/bilibili_login_with_account.png", interval=0.5, max_time=5):
+                if not click("res/img/bilibili_login_with_account.png"):
+                    logger.error("无法点击B服使用账密登录")
+                    logger.debug("[login_bilibili] B服点击使用账密登录点击失败")
                     return 0
                 else:
-                    logger.debug("[login_bilibili] B服其他登录方式按钮点击成功")
+                    logger.debug("[login_bilibili] B服点击使用账密登录点击成功")
             else:
-                logger.error("B服其他登录方式按钮未找到")
-                logger.debug("[login_bilibili] B服其他登录方式按钮未找到")
+                logger.error("B服使用账密登录未找到")
+                logger.debug("[login_bilibili] B服使用账密登录未找到")
                 return 0
 
         # 执行登录流程
