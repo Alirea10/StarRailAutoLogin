@@ -977,25 +977,6 @@ class Login:
         logger.debug(f"[login_bilibili] B服登录流程完成，结果: {result}")
         return result
 
-    # @staticmethod
-    # def start_game_click():
-    #     """
-    #     处理游戏启动时的点击操作
-    #     检查是否处于登录页并登录
-    #     """
-    #     x, y = SRAOperator.get_screen_center()
-    #
-    #     # 检查是否处于登录页(以12+标志为准)
-    #     if SRAOperator.exist("res/img/12+.png"):
-    #         click_point(x, y)
-    #         time.sleep(3)
-    #
-    #     logger.info("开始游戏")
-    #
-    #     # 检查并点击退出按钮进入游戏
-    #     if check("res/img/quit.png", interval=0.5):
-    #         click_point(x, y)
-
     @staticmethod
     def wait_game_load():
         """
@@ -1058,7 +1039,7 @@ if __name__ == "__main__":
     logger.debug("[main] 开始解析命令行参数")
     if len(sys.argv) < 2:
         logger.warning("未给定参数 id，默认为1，请给定参数设置例如: python Login.py 1")
-        logger.debug("[main] 未提供配置ID参数���使用默认值1")
+        logger.debug("[main] 未提供配置ID参数，使用默认值1")
     config_id = sys.argv[1] if len(sys.argv) > 1 else "1"
     logger.debug(f"[main] 使用配置ID: {config_id}")
 
