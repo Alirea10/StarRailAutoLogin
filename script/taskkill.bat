@@ -39,17 +39,21 @@ echo [%TIMESTAMP%] 管理员权限已获取
 echo [%TIMESTAMP%] 强力终止游戏进程...
 echo.
 
-set "keywords=Starward 崩坏：星穹铁道 Honkai StarRail OCR.json"
+:: 直接终止已知的进程名
+echo [%TIMESTAMP%] 终止 Starward 进程...
+taskkill /F /IM "Starward.exe" /T >nul 2>&1
 
-for %%k in (%keywords%) do (
-    echo [%TIMESTAMP%] 搜索包含 "%%k" 的进程...
+echo [%TIMESTAMP%] 终止星穹铁道进程...
+taskkill /F /IM "StarRail.exe" /T >nul 2>&1
 
-    for /f "tokens=1,2 delims=:" %%a in ('powershell -Command "Get-Process *%%k* -ErrorAction SilentlyContinue | ForEach-Object { $_.Name + ':' + $_.Id }" 2^>nul') do (
-        if not "%%b"=="" (
-            echo [%TIMESTAMP%] 终止: %%a (PID: %%b)
-            taskkill /F /PID %%b /T >nul 2>&1
-        )
-    )
+echo [%TIMESTAMP%] 终止崩坏星穹铁道启动器进程...
+taskkill /F /IM "launcher.exe" /T >nul 2>&1
+
+:: 使用 wmic 查找包含特定命令行参数的进程（更可靠）
+echo [%TIMESTAMP%] 搜索其他相关进程...
+for /f "tokens=2" %%p in ('wmic process where "CommandLine like '%%StarRail%%' or CommandLine like '%%Honkai%%'" get ProcessId 2^>nul ^| findstr /r "^[0-9]"') do (
+    echo [%TIMESTAMP%] 终止进程 PID: %%p
+    taskkill /F /PID %%p /T >nul 2>&1
 )
 
 echo.
