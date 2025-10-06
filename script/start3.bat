@@ -1,4 +1,5 @@
-chcp 936
+@echo off
+chcp 65001 >nul
 setlocal enabledelayedexpansion
 
 set "project_dir=%~dp0.."
