@@ -78,7 +78,9 @@ if exist "!project_dir!\.venv\" (
     REM 即使虚拟环境已存在，也继续安装依赖
     echo.
     echo 检查并安装依赖包...
-    pip install -r "!requirements_file!" -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn
+    REM 如果安装不了，可能是网络问题，可以给下方指令加上 -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn
+    REM 但是镜像源不一定包含所有包，可能会导致部分包安装失败，所以默认不使用镜像源
+    pip install -r "!requirements_file!"
     if errorlevel 1 (
         echo 警告：部分依赖包安装可能失败
     ) else (
