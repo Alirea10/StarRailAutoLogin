@@ -784,16 +784,6 @@ class Login:
                 logger.debug("[_input_credentials] B服进入游戏按钮未找到")
                 return False
 
-        logger.debug("[_input_credentials] 登录凭据输入完成")
-        time.sleep(3)
-
-        # 获取屏幕中心点坐标
-        x, y = SRAOperator.get_screen_center()
-
-        # 检查是否处于登录页(以12+标志为准)，进入火车头界面
-        if check("res/img/12+.png", interval=0.5, max_time=5):
-            click_point(x, y)
-            time.sleep(3)
 
         logger.info("[_input_credentials] 点击开始游戏，即将进入火车头")
         return True
@@ -809,6 +799,16 @@ class Login:
             Bool: 登录结果状态
         """
         logger.debug(f"[_wait_for_login_result] 开始等待登录结果，渠道: {channel}")
+
+        logger.debug("[_wait_for_login_result 登录凭据输入完成后可能需要点击一次屏幕中心以登录")
+        time.sleep(3)
+
+        # 获取屏幕中心点坐标
+        x, y = SRAOperator.get_screen_center()
+
+        # 检查是否处于登录页(以12+标志为准)，进入火车头界面
+        if check("res/img/12+.png", interval=0.5, max_time=5):
+            click_point(x, y)
 
         if channel == 0:
             logger.debug("[_wait_for_login_result] 等待官服登录结果")
