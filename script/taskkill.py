@@ -61,7 +61,9 @@ def kill_process_by_name(process_name):
             ['taskkill', '/F', '/IM', process_name, '/T'],
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL,
-            check=False
+            check=False,
+            encoding='utf-8',
+            errors='ignore'
         )
     except Exception as e:
         print(f"[{timestamp}] 终止进程时出错: {e}")
@@ -77,7 +79,9 @@ def kill_process_by_pid(pid):
             ['taskkill', '/F', '/PID', str(pid), '/T'],
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL,
-            check=False
+            check=False,
+            encoding='utf-8',
+            errors='ignore'
         )
     except Exception as e:
         print(f"[{timestamp}] 终止进程时出错: {e}")
@@ -89,14 +93,20 @@ def find_processes_by_commandline(keywords):
     print(f"[{timestamp}] 搜索其他相关进程...")
 
     try:
-        # 使用 PowerShell 查询进程
-        ps_command = f'Get-Process | Where-Object {{$_.Path -like "*{keywords[0]}*" -or $_.Path -like "*{keywords[1]}*"}} | Select-Object -ExpandProperty Id'
+        # 使用 PowerShell 查询进程，设置输出编码为 UTF-8
+        ps_command = (
+            f'[Console]::OutputEncoding = [System.Text.Encoding]::UTF8; '
+            f'Get-Process | Where-Object {{$_.Path -like "*{keywords[0]}*" -or $_.Path -like "*{keywords[1]}*"}} | '
+            f'Select-Object -ExpandProperty Id'
+        )
 
         result = subprocess.run(
-            ['powershell', '-Command', ps_command],
+            ['powershell', '-NoProfile', '-Command', ps_command],
             capture_output=True,
             text=True,
-            check=False
+            check=False,
+            encoding='utf-8',
+            errors='ignore'
         )
 
         # 解析输出获取 PID
@@ -119,11 +129,14 @@ def find_processes_by_commandline(keywords):
 def try_tasklist_method(keywords):
     """使用 tasklist 作为备用方法"""
     try:
+        # 使用 chcp 65001 强制切换到 UTF-8，然后执行 tasklist
         result = subprocess.run(
-            ['tasklist', '/V', '/FO', 'CSV'],
+            ['cmd', '/c', 'chcp 65001 >nul && tasklist /V /FO CSV'],
             capture_output=True,
             text=True,
-            check=False
+            check=False,
+            encoding='utf-8',
+            errors='ignore'
         )
 
         if result.returncode == 0:
@@ -157,8 +170,8 @@ def main():
     print(f"[{timestamp}] 强力终止游戏进程...")
     print()
 
-    # 终止已知的进程
-    process_list = ["Starward.exe", "StarRail.exe", "launcher.exe","OCR.json"]
+    # 终止已知的进程 - 使用列表统一管理
+    process_list = ["Starward.exe", "StarRail.exe", "launcher.exe", "OCR.json"]
     for process_name in process_list:
         kill_process_by_name(process_name)
 
@@ -170,8 +183,11 @@ def main():
     print(f"[{timestamp}] 进程终止完成")
     print()
 
-    # 等待用户按键
-    input("按任意键退出...")
+    # 等待用户按键 - 处理EOF异常
+    try:
+        input("按任意键退出...")
+    except (EOFError, KeyboardInterrupt):
+        print("程序退出")
 
 
 if __name__ == "__main__":
