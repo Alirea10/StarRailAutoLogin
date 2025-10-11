@@ -8,6 +8,8 @@ import subprocess
 import time
 from datetime import datetime
 
+# 需要终止的进程列表
+process_list = ["Starward.exe", "StarRail.exe", "launcher.exe", "PaddleOCR-json.exe"]
 
 def is_admin():
     """检查是否具有管理员权限"""
@@ -139,7 +141,7 @@ def try_tasklist_method(keywords):
             errors='ignore'
         )
 
-        if result.returncode == 0:
+        if result.returncode == 0 and result.stdout:
             lines = result.stdout.strip().split('\n')
             for line in lines[1:]:  # 跳过标题行
                 # 检查是否包含关键词
@@ -170,8 +172,6 @@ def main():
     print(f"[{timestamp}] 强力终止游戏进程...")
     print()
 
-    # 终止已知的进程 - 使用列表统一管理
-    process_list = ["Starward.exe", "StarRail.exe", "launcher.exe", "OCR.json"]
     for process_name in process_list:
         kill_process_by_name(process_name)
 
