@@ -1,0 +1,2 @@
+# 强制 .bat 文件使用 CRLF
+*.bat text eol=crlf
