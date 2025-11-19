@@ -512,7 +512,7 @@ class Login:
             # 官服登录状态检测（移除用户协议检测）
             logger.debug("[_detect_login_state] 检测官服登录状态")
             result = check_any(
-                ["res/img/login_page.png", "res/img/quit.png", "res/img/chat_enter.png"],
+                ["res/img/login_page.png", "res/img/quit.png", "res/img/chat_enter.png", "res/img/login_other.png"],
                 0.5, 100)
             # 重新映射结果：0-未登录, 1-已登录, 2-已进入游戏
             if result == 0:  # login_page.png
@@ -524,6 +524,10 @@ class Login:
             elif result == 2:  # chat_enter.png
                 result = 3  # 已进入游戏
                 logger.debug("[_detect_login_state] 官服状态: 已进入游戏")
+            elif result == 3:  # login_other.png
+                click("res/img/login_other.png")
+                result = 0  # 未登录
+                logger.debug("[_detect_login_state] 官服状态: 未登录（检测到登录其他账号按钮）")
         else:
             # B服登录状态检测（移除用户协议检测）
             logger.debug("[_detect_login_state] 检测B服登录状态")
@@ -900,18 +904,9 @@ class Login:
             login_instance._handle_logout_process(0)
         # 如果从未登录，点击一次使用账号密码登录再进行登录
         else:
-            logger.debug("[login_official] 点击使用账号登录")
-            if check("res/img/login_with_account.png", interval=0.5, max_time=5):
-                if not click("res/img/login_with_account.png"):
-                    logger.error("无法点击使用账号登录")
-                    logger.debug("[login_official] 官服点击使用账号登录失败")
-                    return False
-                else:
-                    logger.debug("[login_official] 官服点击使用账号登录成功")
-            else:
-                logger.error("官服使用账号登录按钮未找到")
-                logger.debug("[login_official] 官服使用账号登录按钮未找到")
-                return False
+            if check("res/img/login_other.png",interval=0.5, max_time=5):
+                click("res/img/login_other.png")
+                logger.debug("[login_official] 官服点击登录其他账号成功")
 
         # 执行登录流程
         logger.debug("[login_official] 执行账号密码登录")
